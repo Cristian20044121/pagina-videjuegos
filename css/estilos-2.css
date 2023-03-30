@@ -1,0 +1,552 @@
+body{
+    background-image: url(../img/Gifs\ animados\ de\ estrellas.gif);
+    backdrop-filter: contrast(150%);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    color: white;
+    border-bottom: 5px groove rgb(0, 255, 255);
+    box-shadow: 2px 4px 5px 6px white;
+    text-shadow: 3px 4px blue;
+    font-family:fantasy;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 12px;
+    margin-top: 30px;
+}
+h2{
+    text-shadow: 5px -5px 10px rgb(0, 247, 255);
+    color: white;
+    font-family: fantasy;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+    white-space: nowrap;
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    animation: escritura 5s steps(34), parpadeo 0.4s infinite;
+    overflow: hidden;
+}
+@keyframes escritura {
+    from{
+        width: 0;
+    }
+}
+@keyframes parpadeo {
+    70%{border-color: transparent;}
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container{
+    box-sizing: border-box; 
+    padding: 10px;
+    margin: 0px 50px;  
+    border-radius: 5px; 
+    padding-bottom: 20px;    
+    height: 800px;
+}
+
+.primer-juego{
+    color: white;
+    background-image: url(../img/mario-kart-8-fondo.jpg);
+    background-position: center center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 15px;
+    text-align: center;
+    width: 500px;
+    height: 630px;
+    float: right;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0px 30px 10px;
+    animation:rotar 7s linear infinite;
+    filter: drop-shadow(0px 7px 21px rgb(255, 0, 115));
+    box-shadow: -1px 0px 5px 6px rgb(255, 0, 115); 
+} 
+.primer-juego h3{
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px -5px 3px rgba(255, 0, 115);
+}
+.primer-juego img{
+    border: 5px solid rgb(255, 0, 115);
+} 
+.primer-juego p{
+    text-align: left;
+}
+.primer-juego a{
+    background-color: rgb(255, 0, 115);
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 7px 21px white);
+    text-decoration: none;
+
+} .primer-juego a:hover{
+    color: white;
+    background-color: rgb(255, 0, 115);
+    filter: drop-shadow(0px 7px 21px rgb(255, 0, 115));
+
+}
+.primer-juego:hover{
+    cursor: pointer;
+    animation: none;
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)),
+    url(../img/mario-kart-8-fondo.jpg);
+} 
+.segundo-juego{
+    color: white;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    width: 500px;
+    height: 670px;
+    float: left;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 0px 30px 10px;
+    box-shadow: -1px 0px 5px 6px rgb(0, 0, 255);
+    animation:rotar 7s linear infinite;
+    filter: drop-shadow(0px 20px 40px rgb(0, 0, 255));
+
+}
+.segundo-juego h3{
+    font-size: 25px;
+    text-shadow: 2px -5px 3px rgb(0, 0, 255);
+}.segundo-juego a{
+    background-color: rgb(17, 0, 255);
+    font-size: 20px;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-decoration: none;
+    filter: drop-shadow(0px 20px 40px white);
+
+} .segundo-juego a:hover{
+    color: white;
+    background-color: blue;
+    filter: drop-shadow(0px 7px 21px rgb(0, 26, 255));
+
+}
+.segundo-juego img{
+    border: 5px solid rgb(0, 0, 255);
+}
+.segundo-juego p{
+    font-weight: bold;
+    text-align: left;
+}
+.segundo-juego:hover{
+    cursor: pointer;
+    animation: none;
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)),
+    url(../img/fondo.jpg);
+    color: white;
+}
+
+
+img{
+    width: 100%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+@keyframes rotar {
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(-180deg);
+    }
+}
+
+
+footer{
+    color: white; 
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 300px;
+    padding: 20px;
+    text-shadow: 5px 5px 4px blue;
+    box-shadow: -4px -5px 10px white;
+    border: 2px groove rgb(0, 255, 255);
+    filter: drop-shadow(0px 7px 21px rgb(4, 0, 255));
+}
+
+/* estilos mario kart archivo */
+.boton a{
+    background-color: rgb(0, 174, 255);
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    font-size: 20px;
+    width: 5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 7px 21px white);
+    text-decoration: none;
+}
+.boton a:hover{
+    color: white;
+    background-color: rgb(0, 174, 255);
+    filter: drop-shadow(0px 7px 21px rgb(0, 174, 255));
+}
+#boton-1{
+    font-family: monospace;
+    background-color: rgb(0, 183, 255);
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    font-size: 20px;
+    width: 9%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 7px 21px white);
+    text-decoration: none;
+    border: none;
+}
+#boton-1:hover{
+    color: white;
+    background-color: rgb(0, 174, 255);
+    filter: drop-shadow(0px 7px 21px rgb(0, 174, 255));
+}
+#boton-2{
+    font-family: monospace;
+    background-color: rgb(0, 183, 255);
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    font-size: 20px;
+    width: 9%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 7px 21px white);
+    text-decoration: none;
+    border: none;
+}
+#boton-2:hover{
+    color: white;
+    background-color: rgb(0, 174, 255);
+    filter: drop-shadow(0px 7px 21px rgb(0, 174, 255));
+}
+.container-juego{
+    padding: 30px;
+}
+/* descripcion del juego mario kart  */
+.description{
+    height: 500px;
+    width: 90%;
+}
+
+.description img{
+    width: 50%;
+    height: 600px;
+    filter: saturate(150%);
+    clip-path: none;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 10px;
+    border: 5px solid #00bbff;
+    filter: drop-shadow(0px 7px 21px #00ddff);
+}
+.description > article{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 49%;
+    font-size: 16px;
+    transform: translateY(-106%);
+    opacity: 0;
+    height: 600px;
+    margin-left: 422px;
+}
+.description > article:hover{
+    background-color: rgba(5,7,12,0.75);
+    opacity: 1;
+    transition: all .4s;
+    border-radius: 5px;
+}
+article p{
+    margin-left: 5px;
+}
+article h4:nth-of-type(1){
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 5px 3px 4px blue;
+}
+article p:nth-of-type(1){
+    border-left: 4px solid red;
+}
+article p:nth-of-type(3){
+    text-decoration: underline;
+}
+article p:nth-of-type(4){
+    font-style: italic;
+}
+.container-juego > h2{
+    width: 48%;
+    border-right: 4px solid rgb(13, 206, 213);
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 200px;
+}
+/* galeria imagenes  */
+.contenedor-img{
+    height: 500px;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    width: 95%;
+    margin: 200px auto;
+}
+.img1{
+    background-image: url(../img/imagen1-galeria.jpg);
+}
+.img2{
+    background-image: url(../img/imagen2-galeria.jpg);
+}
+.img3{
+    background-image: url(../img/imagen3-galeria.jpg);
+}
+.img4{
+    background-image: url(../img/imagen4.galeria.jpg);
+}
+.img5{
+    background-image: url(../img/imagen5-galeria.jpg);
+}
+.img6{
+    background-image: url(../img/imagen6-galeria.jpg);
+}
+.img7{
+    background-image: url(../img/imagen7-galeria.jpg);
+}
+.img8{
+    background-image: url(../img/imagen8-galeria.jpg);
+}
+.img9{
+    background-image: url(../img/imagen8-galeria.jpg);
+}
+.img9{
+    background-image: url(../img/imagen9-galeria.jpg);
+}
+.img10{
+    background-image: url(../img/imagen10-galeria.webp);
+}
+.contenedor-img > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    filter: drop-shadow(0px 7px 21px #00d9ff);
+}
+.contenedor-img > div:hover{
+    flex: 5;
+    filter: saturate(200%);
+}
+.comprar{
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-family: monospace;
+    display: flex;
+    width: 12%;
+    border: 5px solid #00d5ff;
+    border-radius: 5px;
+    filter: drop-shadow(0px 7px 21px #00ffee);
+    margin: 200px auto;
+}
+.comprar p:nth-of-type(2) {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.comprar:hover{
+    background-color: #0084ff;
+    transition: all .4s;
+    font-size: 14px;
+}
+
+
+@media screen and (min-width:769px) and (max-width: 1500px) {
+    .boton{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #boton-1{
+        width: 35%;
+        margin-left: 100px;
+    }
+    #boton-2{
+        width: 30%;
+    }
+    .container{
+        margin: 5px auto;
+        text-align: center;
+        display: block;
+        height: 100%;
+        width: 60%;
+    }
+    .primer-juego{
+        float: none;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .segundo-juego{
+        margin: 40px auto;
+        float: none;
+        box-sizing: border-box;
+    }
+    .description{
+        display: flex;
+        width: 100%;
+    }
+    .description img{
+        width: 50%;
+        margin: 0;
+        height: 492px;
+    }
+    .description > article{
+        width: 80%;
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 15px;
+        margin: 0 auto;
+        opacity: 1;
+        height: 100%;
+        transform: translateY(0);
+    }
+    .container-juego > h2{
+        font-size: 40px;
+        width: 75%;
+        border: none;
+    }
+    .comprar{
+        width: 20%;
+        font-size: 14px;
+    }
+    .comprar:hover{
+        background-color: #0084ff;
+        transition: all .4s linear;
+        font-size: 15px;
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boton{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    #boton-1{
+        width: 30%;
+        font-size: 14px;
+        margin-left: 40px;
+    }
+    #boton-2{
+        width: 30%;
+        font-size: 14px;
+    }
+    .container{
+        display: block;
+        margin: 5px auto;
+        width: 95%;
+        height: 100%;
+    }
+    h2{
+        font-size: 40px;
+        letter-spacing: 0;
+        text-align: center;
+        text-shadow: 5px -5px 10px rgb(0, 247, 255);
+        margin: 0 auto 60px;
+        width: 400px;
+    }
+    .primer-juego{
+        margin: 0 auto;
+        width: 90%;
+        height: 640px;
+        float: none;
+    }
+    .segundo-juego{
+        float: none;
+        margin: 80px auto;
+        width: 90%;
+        height: 760px;
+    }
+    .description{
+        display: block;
+        height: 800px;
+        width: 100%;
+    }
+    .description img{
+        width: 95%;
+        height: 0cqmax;
+        margin: 0;
+        height: 300px;
+    }
+    .description > article{
+        width: 96%;
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 14px;
+        margin: 0 auto;
+        opacity: 1;
+        height: 50%;
+        transform: translateY(0);
+    }
+    .container-juego > h2{
+        font-size: 20px;
+        margin: 200px 0;
+        width: 350px;
+        border: none;
+    }
+    .contenedor-img{
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .contenedor-img > div:hover{
+        flex: 20;
+        filter: saturate(200%);
+    }
+    .comprar{
+        margin: 0 auto;
+        border: 2px solid red;
+        width:50% ;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        font-family: monospace;
+        display: flex;
+        width: 50%;
+        border: 5px solid #00d5ff;
+        border-radius: 5px;
+        filter: drop-shadow(0px 7px 21px #00ffee);
+    }
+    
+    footer{
+        width: 90%;
+        font-size: 20px;
+    }
+}
+
